@@ -1,0 +1,81 @@
+<!doctype html>
+<head>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
+  </head>
+<title>Teddy.</title>
+
+<!-- {% if filename and (option == 'form60') %}
+	<div>
+		<img src="{{ url_for('static', filename='/Images/'+filename) }}">
+	</div>
+{% endif %}
+
+<form method="post" action="/home" enctype="multipart/form-data">
+		<p>
+			<input type="file" name="file" autocomplete="off" required>
+		</p>
+		<input type="radio" name="options" id="option1" value="form60">form60<br>
+		<input type="radio" name="options" id="option2" value="cheque">cheque<br>
+		<input type="radio" name="options" id="option2" value="cheque">printed cheque<br>
+		<input type="radio" name="options" id="option3" value="doc">doc<br>
+    <p>
+		<input type="submit" value="Submit">
+	</p>
+	
+</form> -->
+
+<body>
+
+
+<div style="height: 100px;"></div>
+
+<span class="teddy-title"><span style="color: #5a8559;">T</span>eddy.</span>
+<div style="height: 10px;"></div>
+<div class="main-div">
+  <form method="post" action="/home" enctype="multipart/form-data">
+    <div>
+      <span
+        style="
+          font: weight 400;
+          font-size: 18px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          color: #5a8559;
+        "
+        >Choose file type</span
+      >
+
+      
+      <div class="radio">
+        <input type="radio" name="options" id="option2" value="cheque" />
+        <label for="option2" class="radio-label">Cheque</label>
+      </div>
+      <div class="radio">
+        <input type="radio" name="options" id="option3" value="doc" />
+        <label for="option3" class="radio-label">Document</label>
+      </div>
+    </div>
+	<div class="radio">
+        <input type="radio" name="options" id="option1" value="form60" />
+        <label for="option1" class="radio-label">Form 60</label>
+      </div>
+
+    <label for="file" class="drop-container">
+      <span class="drop-title">Drop PDF file here</span>
+      or
+      <input
+        type="file"
+        name="file"
+        id="file"
+        autocomplete="off"
+        required
+      />
+    </label>
+
+    <p style="text-align: center;">
+      <input class="submit-button" type="submit" value="Submit" />
+    </p>
+  </form>
+</div>
+</body>
+</html>

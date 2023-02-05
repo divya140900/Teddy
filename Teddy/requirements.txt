@@ -1,0 +1,13 @@
+flask_wtf wtforms 
+tabula-py
+pyPDF2
+Cython contextlib2 pillow lxml matplotlib
+pycocotools
+tesseract-ocr
+pytesseract
+tf_slim
+tf-models-official
+pyspellchecker
+
+
+# !apt-get install -qq protobuf-compiler python-pil python-lxml python-tk
